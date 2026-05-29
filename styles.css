@@ -36,8 +36,11 @@ a {
   flex-wrap: wrap;
   gap: 1.2rem;
   padding: 1rem;
-  position: relative;
-  z-index: 2;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(12, 39, 72, 0.96);
+  backdrop-filter: blur(8px);
 }
 
 .nav a {
@@ -129,7 +132,9 @@ h1 {
 .section {
   padding: 4rem 0;
 }
-
+section {
+  scroll-margin-top: 90px;
+}
 .section.muted {
   background: var(--soft);
 }
