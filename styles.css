@@ -78,9 +78,16 @@ a {
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  font-size: 1.4rem;
+  font-size: 0.9rem;
   opacity: 0.85;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  line-height: 1.4;
+  text-align: center;
 }
 
 h1 {
@@ -331,6 +338,24 @@ footer {
 
 .organizer-card strong {
   color: var(--primary-dark);
+}
+
+@media (max-width: 600px) {
+  .eyebrow {
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    gap: 0.25rem;
+    padding: 0 0.5rem;
+  }
+
+  .eyebrow-separator {
+    display: none;
+  }
+
+  .eyebrow span {
+    display: block;
+    width: 100%;
+  }
 }
 
 @media (max-width: 900px) {
